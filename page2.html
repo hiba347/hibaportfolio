@@ -221,10 +221,11 @@
          <h1 class="form-titles">What is your email address?</h1>
       </div>
       <div class="modal-wrapper1">
-         <form class="form1" action="http://formspree.io/ha347@scarletmail.rutgers.com" method="POST">
+         <form class="form1" name="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc0rqm_awvTI_ZRLrO0oBzWuKr8QF9A0pEk2s8wsMbmqov8uw/viewform?usp=pp_url&entry.1652261559=hibaakhter99@gmail.com" target="hidden_iframe" onsubmit="submitted=true;">
             <input 
             type="email" 
-            name="_replyto"
+            name="entry.1652261559"
+            id="entry.1652261559"
             value="foo@example.net"/>
             <br>
 
@@ -234,8 +235,8 @@
       <div class="modal-wrapper2">
             <input
             class="form2"
-            name="feedback"
-            id="paragraph-input"
+<!--             name="feedback"
+            id="paragraph-input" -->
             value="Enter text."/>
             <br>  
       <div class="modal-wrapper3">
@@ -248,7 +249,16 @@
             value="SEND"/>
             <br>
          </form>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
       </div>
+                                                                                                     <script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
    </div>
    </div>
    </body>
