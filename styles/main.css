@@ -367,7 +367,7 @@ a {
 /* This is the new homepage stuff */
 
 .background-img {
-   background: url("/images/professional_pic.jpg") no-repeat center;
+   background: url("https://github.com/hiba347/hibaportfolio/blob/master/images/professional_pic.jpg?raw=true") no-repeat center;
    background-size: cover;
    overflow: auto;
    /* position: relative; */
