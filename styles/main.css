@@ -328,7 +328,7 @@ a {
    .sidebar {
       display: flex;
       width: 55.3rem;
-      height: 254.5rem;
+/*       height: 254.5rem; */
       justify-content: flex-end;
    }
    h1.sidebar-logo {
